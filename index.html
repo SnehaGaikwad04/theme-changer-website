@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer Project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="D:/fonts/ChargerSportBd.otf">
+    <link rel="stylesheet" href="D:/fonts/Afacad[wght].ttf">
+    <link rel="stylesheet" href="D:/fonts/Montserrat-Ace-Bold.otf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Praise&family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Praise&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Praise&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Praise&family=Quicksand:wght@300..700&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <span class="navbar-brand"><img src="themeify logo.svg" alt="logo"> Themeify</span>
+                <div class="theme-buttons">
+                    <button class="theme-btn btn-light" onclick="changeTheme('light')">☀️ Light</button>
+                    <button class="theme-btn btn-dark" onclick="changeTheme('dark')">🌙 Dark</button>
+                    <button class="theme-btn btn-neon" onclick="changeTheme('neon')">✨ Neon</button>
+                    <button class="theme-btn btn-blue-grad" onclick="changeTheme('blue-gradient')">💙 Blue</button>
+                    <button class="theme-btn btn-red-grad" onclick="changeTheme('red-gradient')">❤️ Red</button>
+                    <button class="theme-btn btn-green-grad" onclick="changeTheme('green-gradient')">💚 Green</button>
+                    <button class="theme-btn btn-pink-blue" onclick="changeTheme('pink-blue')">🍑 Peach</button>
+                    <button class="theme-btn btn-orange-blue" onclick="changeTheme('orange-blue')">🧡 Orange</button>
+                    <button class="theme-btn btn-purple-holo" onclick="changeTheme('purple-holo')">💜 Purple</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>Welcome to Themeify!</h1>
+            <p>Click the buttons above to switch between 9 different beautiful themes</p>
+            <p>Experience stunning gradients with perfect contrast and readability!</p>
+        </div>
+
+
+        <div class="features">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="feature-box">
+                            <div class="feature-icon">🎨</div>
+                            <h3>9 Unique Themes</h3>
+                            <p>Choose from Light, Dark, Neon Cyberpunk, and 6 beautiful gradient themes with modern
+                                glassmorphism design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="feature-box">
+                            <div class="feature-icon">🌈</div>
+                            <h3>Perfect Contrast</h3>
+                            <p>All text is perfectly readable with high contrast colors. White frosted glass cards sit
+                                beautifully on gradient backgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="feature-box">
+                            <div class="feature-icon">✨</div>
+                            <h3>Modern Design</h3>
+                            <p>Glassmorphism effects, gradient text, and smooth animations create a premium,
+                                contemporary look! <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>About This Project</h2>
+                    <p>This is a theme changer project built with HTML, CSS, and JavaScript using SWITCH CASE
+                        statements.</p>
+                    <p>Each theme features beautiful gradient backgrounds with frosted glass cards for perfect
+                        readability and modern aesthetics.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>How It Works</h2>
+                    <p>The JavaScript uses SWITCH CASE to handle theme selection. Each case applies different CSS
+                        classes for colors and effects.</p>
+                    <p>Glassmorphism and gradient text effects create a premium, modern user experience across all
+                        themes.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mt-5">
+            <h2>💡 Theme Features</h2>
+            <ul>
+                <li><strong>Light:</strong> Classic bright theme with clean white design</li>
+                <li><strong>Dark:</strong> Sleek dark mode perfect for night browsing</li>
+                <li><strong>Neon:</strong> Cyberpunk style with glowing neon colors</li>
+                <li><strong>Blue Gradient:</strong> Purple to blue gradient with frosted glass cards</li>
+                <li><strong>Red Gradient:</strong> Peach to red gradient with modern contrast</li>
+                <li><strong>Green Gradient:</strong> Yellow-green gradient with dark text</li>
+                <li><strong>Peach oat milk:</strong> Vibrant peach and oat milk combination</li>
+                <li><strong>Orange Blue:</strong> Bold orange and blue contrast</li>
+                <li><strong>Purple Holographic:</strong> Dreamy holographic purple theme</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Made with ❤️ using HTML, CSS & JavaScript (Switch Case)</p>
+        <p> &copy; 2024 Theme Changer Project</p>
+    </div>
+
+    <script>
+
+        // function changeTheme(themeName) {
+        //     var body = document.body;
+
+
+        //     body.classList.remove('light-theme');
+        //     body.classList.remove('dark-theme');
+        //     body.classList.remove('neon-theme');
+        //     body.classList.remove('blue-gradient-theme');
+        //     body.classList.remove('red-gradient-theme');
+        //     body.classList.remove('green-gradient-theme');
+        //     body.classList.remove('pink-blue-theme');
+        //     body.classList.remove('orange-blue-theme');
+        //     body.classList.remove('purple-holo-theme');
+
+
+            // switch (themeName) {
+            //     case 'light':
+            //         body.classList.add('light-theme');
+            //         console.log('Theme changed to: Light ☀️');
+            //         break;
+
+            //     case 'dark':
+            //         body.classList.add('dark-theme');
+            //         console.log('Theme changed to: Dark 🌙');
+            //         break;
+
+            //     case 'neon':
+            //         body.classList.add('neon-theme');
+            //         console.log('Theme changed to: Neon Cyberpunk ✨');
+            //         break;
+
+            //     case 'blue-gradient':
+            //         body.classList.add('blue-gradient-theme');
+            //         console.log('Theme changed to: Blue Gradient 💙');
+            //         break;
+
+            //     case 'red-gradient':
+            //         body.classList.add('red-gradient-theme');
+            //         console.log('Theme changed to: Red Gradient ❤️');
+            //         break;
+
+            //     case 'green-gradient':
+            //         body.classList.add('green-gradient-theme');
+            //         console.log('Theme changed to: Green Gradient 💚');
+            //         break;
+
+            //     case 'pink-blue':
+            //         body.classList.add('pink-blue-theme');
+            //         console.log('Theme changed to: Pink Blue 🍑');
+            //         break;
+
+            //     case 'orange-blue':
+            //         body.classList.add('orange-blue-theme');
+            //         console.log('Theme changed to: Orange Blue 🧡');
+            //         break;
+
+            //     case 'purple-holo':
+            //         body.classList.add('purple-holo-theme');
+            //         console.log('Theme changed to: Purple Holographic 💜');
+            //         break;
+
+            //     default:
+            //         body.classList.add('light-theme');
+            //         console.log('Invalid theme! Switched to Light theme ☀️');
+            // }
+
+            function changeTheme(themeName) {
+                var body = document.body;
+                var buttons = document.querySelectorAll('.theme-btn');
+
+                // Remove all theme classes
+                body.classList.remove(
+                    'light-theme',
+                    'dark-theme',
+                    'neon-theme',
+                    'blue-gradient-theme',
+                    'red-gradient-theme',
+                    'green-gradient-theme',
+                    'pink-blue-theme',
+                    'orange-blue-theme',
+                    'purple-holo-theme'
+                );
+
+                // Remove selected from all buttons
+                buttons.forEach(function (btn) {
+                    btn.classList.remove('selected');
+                });
+
+                // Add selected theme
+                body.classList.add(themeName + '-theme');
+
+                // Add selected class to clicked button
+                buttons.forEach(function (btn) {
+                    if (btn.getAttribute('onclick').includes(themeName)) {
+                        btn.classList.add('selected');
+                    }
+                });
+
+                console.log('Theme changed to: ' + themeName);
+            }
+        
+    </script>
+
+</body>
+
+</html>

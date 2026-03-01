@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Light Theme (Default) */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.light-theme .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.light-theme .card {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .navbar-brand {
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-theme .navbar {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.dark-theme .card {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .navbar-brand {
+    color: #ffffff;
+}
+
+/* Neon Cyberpunk Theme */
+body.neon-theme {
+
+    background: linear-gradient(135deg, #07070f, #211227);
+    color: #db83fe;
+}
+
+.neon-theme .navbar {
+    background: linear-gradient(135deg, #07070f, #211227);
+    box-shadow: 0 2px 20px #db83fe86;
+    /* border-bottom: 2px solid #00ffff; */
+    color: #db83fe;
+}
+
+.neon-theme .card {
+    font-family: afacad, sans-serif;
+    background-color: transparent;
+    color: #4adbf8;
+    box-shadow: 0 0 20px #db83fe29;
+    border: 2px solid #db83fe;
+}
+
+.neon-theme h2,
+.neon-theme h3 {
+    font-family: charger sport, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #db83fe;
+    text-shadow: 0 0 10px #db83fe71;
+}
+
+.neon-theme h1 {
+    font-family: charger sport, sans-serif;
+    font-size: 500px;
+    font-weight: 700;
+    color: #db83fe;
+    text-shadow: 0 0 10px #db83fe71;
+}
+
+.neon-theme p {
+    font-family: afacad, sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.neon-theme .navbar-brand {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff58;
+}
+
+/* Blue Gradient Theme - Modern Design */
+body.blue-gradient-theme {
+    background: linear-gradient(135deg, #b1c9ef 25%, #8aaee0 50%, #628ecb 75%, #050f69 100%);
+    color: #2c256b;
+
+}
+
+.blue-gradient-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 51, 255, 0.3);
+    /* border-bottom: 3px solid #977DFF; */
+    color: #25446b;
+}
+
+.blue-gradient-theme .navbar-brand {
+    background: linear-gradient(90deg, #7d9bff, #0033FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.blue-gradient-theme .card {
+    font-family: 'montserrat', sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #193e66;
+    /* border: 2px solid rgba(151, 125, 255, 0.3); */
+    box-shadow: 0 8px 32px rgba(151, 125, 255, 0.2);
+}
+
+.blue-gradient-theme h1,
+.blue-gradient-theme h2,
+.blue-gradient-theme h3 {
+    font-family: 'montserrat', sans-serif;
+    background-color: #052355;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.blue-gradient-theme p {
+    font-family: 'Afacad', sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.blue-gradient-theme li {
+    font-family: 'Afacad', sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.blue-gradient-theme h1 {
+    font-size: 4rem;
+    margin-bottom: 100px;
+}
+
+.blue-gradient-theme .footer p {
+
+
+    color: #ffffff;
+
+}
+
+/* .blue-gradient-theme .footer {
+    background: #052355; 
+} */
+
+/* Red Gradient Theme - Modern Design */
+body.red-gradient-theme {
+    background: linear-gradient(180deg, #FFDBE8 0%, #FFD8E8 20%, #FF94B2 40%, #F24455 60%, #E5203A 80%, #711a20 100%);
+    color: #660F24;
+}
+
+.red-gradient-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(229, 32, 58, 0.3);
+    /* border-bottom: 3px solid #FF94B2; */
+    color: #660F24;
+}
+
+.red-gradient-theme .navbar-brand {
+    background: linear-gradient(90deg, #FF94B2, #E5203A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.red-gradient-theme .card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #660F24;
+    box-shadow: 0 8px 32px rgba(242, 68, 85, 0.2);
+}
+
+.red-gradient-theme h1,
+.red-gradient-theme h2,
+.red-gradient-theme h3 {
+    font-family: playfair display, serif;
+    color: #E5203A;
+    font-weight: bold;
+}
+
+.red-gradient-theme p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.red-gradient-theme li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.red-gradient-theme .footer p {
+    color: #ffffff;
+}
+
+/* Green Gradient Theme - Modern Design */
+body.green-gradient-theme {
+    background: linear-gradient(180deg, #FFFDEE 0%, #E2FBCE 25%, #E3EF26 50%, #076653 75%, #0C342C 100%);
+    color: #0C342C;
+}
+
+.green-gradient-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(7, 102, 83, 0.3);
+    color: #0C342C;
+}
+
+.green-gradient-theme .navbar-brand {
+    background: linear-gradient(90deg, #E3EF26, #076653);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.green-gradient-theme .card {
+    font-family: "Jua", sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #0C342C;
+    box-shadow: 0 8px 32px rgba(7, 102, 83, 0.2);
+}
+
+.green-gradient-theme h1,
+.green-gradient-theme h2,
+.green-gradient-theme h3 {
+    font-family: "Jua", sans-serif;
+    color: #0C342C;
+    font-weight: bold;
+}
+
+.green-gradient-theme p {
+    font-family: "Jua", sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.green-gradient-theme li {
+    font-family: "Jua", sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.green-gradient-theme .footer p {
+    color: #ffffff;
+}
+
+/* Pink Blue Theme - Modern Design */
+body.pink-blue-theme {
+    background: linear-gradient(135deg, #f2e0d2 0%, #f9cbd6 50%, #f2b0bc 100%);
+    color: #9d182b;
+}
+
+.pink-blue-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(245, 86, 155, 0.3);
+    color: #1355B2;
+}
+
+.pink-blue-theme .navbar-brand {
+    background: linear-gradient(90deg, #f9cbd6, #F5569B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.pink-blue-theme .card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #9d182b;
+    box-shadow: 0 8px 32px #9d182c50;
+}
+
+.pink-blue-theme h1,
+.pink-blue-theme h2,
+.pink-blue-theme h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #9d182b;
+    font-weight: bold;
+
+}
+
+.pink-blue-theme p {
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #9d182b;
+}
+
+/* Orange Blue Theme - Modern Design */
+body.orange-blue-theme {
+    background: linear-gradient(180deg, #ffe6b1 0%, #e9c579 40%, #e58423 100%);
+    color: #3d1202;
+}
+
+.orange-blue-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px #621c0378;
+    color: #3d1202;
+}
+
+.orange-blue-theme .navbar-brand {
+    background: linear-gradient(90deg, #EF8F00, #3d1202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.orange-blue-theme .card {
+    font-family: 'Afacad', sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #3d1202;
+    box-shadow: 0 8px 32px rgba(239, 143, 0, 0.2);
+}
+
+.orange-blue-theme h1,
+.orange-blue-theme h2,
+.orange-blue-theme h3 {
+    color: #3d1202;
+    font-family: 'Afacad', sans-serif;
+    font-weight: bold;
+}
+
+.orange-blue-theme p {
+    font-family: 'Afacad', sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #3d1202;
+}
+
+.orange-blue-theme li {
+    font-family: 'Afacad', sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #3d1202;
+}
+
+/* Purple Holographic Theme - Modern Design */
+body.purple-holo-theme {
+    background: linear-gradient(135deg, #5044af 0%, #807eda 25%, #a1a9f3 50%, #9ecbf8 75%, #efe5fb 100%);
+    color: #361965;
+}
+
+.purple-holo-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(80, 68, 175, 0.4);
+    border-bottom: 3px solid #807eda;
+    color: #5044af;
+}
+
+.purple-holo-theme .navbar-brand {
+    background: linear-gradient(90deg, #5044af, #9ecbf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.purple-holo-theme .card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    color: #5044af;
+    border: 2px solid rgba(128, 126, 218, 0.4);
+    box-shadow: 0 8px 32px rgba(80, 68, 175, 0.3);
+}
+
+.purple-holo-theme h2,
+.purple-holo-theme h3 {
+    color: #361965;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.purple-holo-theme h1 {
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.purple-holo-theme p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #382b9e;
+}
+
+.purple-holo-theme li {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    line-height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #382b9e;
+}
+
+/* Common Styles */
+.navbar {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 100px;
+    height: 100px;
+}
+
+.navbar-brand img {
+    height: 60px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theme-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.theme-btn.selected {
+    /* border: #3b2ea2 solid 0.5px; */
+    transform: scale(1.1);
+}
+
+.btn-light {
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    color: #333;
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+}
+
+.btn-neon {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+}
+
+.btn-blue-grad {
+    background: linear-gradient(135deg, #977DFF, #0033FF);
+}
+
+.btn-red-grad {
+    background: linear-gradient(135deg, #FF94B2, #E5203A);
+}
+
+.btn-green-grad {
+    background: linear-gradient(135deg, #E3EF26, #076653);
+}
+
+.btn-pink-blue {
+    background: linear-gradient(135deg, #f2e0d2, #e26a8c);
+}
+
+.btn-orange-blue {
+    background: linear-gradient(135deg, #e8c581, #ba3d03);
+}
+
+.btn-purple-holo {
+    background: linear-gradient(135deg, #5044af, #9ecbf8);
+}
+
+.card {
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .theme-buttons {
+        justify-content: center;
+    }
+
+    .theme-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
