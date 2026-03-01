@@ -154,77 +154,10 @@
 
     <script>
 
-        // function changeTheme(themeName) {
-        //     var body = document.body;
-
-
-        //     body.classList.remove('light-theme');
-        //     body.classList.remove('dark-theme');
-        //     body.classList.remove('neon-theme');
-        //     body.classList.remove('blue-gradient-theme');
-        //     body.classList.remove('red-gradient-theme');
-        //     body.classList.remove('green-gradient-theme');
-        //     body.classList.remove('pink-blue-theme');
-        //     body.classList.remove('orange-blue-theme');
-        //     body.classList.remove('purple-holo-theme');
-
-
-            // switch (themeName) {
-            //     case 'light':
-            //         body.classList.add('light-theme');
-            //         console.log('Theme changed to: Light ☀️');
-            //         break;
-
-            //     case 'dark':
-            //         body.classList.add('dark-theme');
-            //         console.log('Theme changed to: Dark 🌙');
-            //         break;
-
-            //     case 'neon':
-            //         body.classList.add('neon-theme');
-            //         console.log('Theme changed to: Neon Cyberpunk ✨');
-            //         break;
-
-            //     case 'blue-gradient':
-            //         body.classList.add('blue-gradient-theme');
-            //         console.log('Theme changed to: Blue Gradient 💙');
-            //         break;
-
-            //     case 'red-gradient':
-            //         body.classList.add('red-gradient-theme');
-            //         console.log('Theme changed to: Red Gradient ❤️');
-            //         break;
-
-            //     case 'green-gradient':
-            //         body.classList.add('green-gradient-theme');
-            //         console.log('Theme changed to: Green Gradient 💚');
-            //         break;
-
-            //     case 'pink-blue':
-            //         body.classList.add('pink-blue-theme');
-            //         console.log('Theme changed to: Pink Blue 🍑');
-            //         break;
-
-            //     case 'orange-blue':
-            //         body.classList.add('orange-blue-theme');
-            //         console.log('Theme changed to: Orange Blue 🧡');
-            //         break;
-
-            //     case 'purple-holo':
-            //         body.classList.add('purple-holo-theme');
-            //         console.log('Theme changed to: Purple Holographic 💜');
-            //         break;
-
-            //     default:
-            //         body.classList.add('light-theme');
-            //         console.log('Invalid theme! Switched to Light theme ☀️');
-            // }
-
             function changeTheme(themeName) {
                 var body = document.body;
                 var buttons = document.querySelectorAll('.theme-btn');
 
-                // Remove all theme classes
                 body.classList.remove(
                     'light-theme',
                     'dark-theme',
@@ -236,16 +169,13 @@
                     'orange-blue-theme',
                     'purple-holo-theme'
                 );
-
-                // Remove selected from all buttons
+s
                 buttons.forEach(function (btn) {
                     btn.classList.remove('selected');
                 });
 
-                // Add selected theme
                 body.classList.add(themeName + '-theme');
 
-                // Add selected class to clicked button
                 buttons.forEach(function (btn) {
                     if (btn.getAttribute('onclick').includes(themeName)) {
                         btn.classList.add('selected');
